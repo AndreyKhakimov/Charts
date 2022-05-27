@@ -246,7 +246,6 @@ open class ChartDataSet: ChartBaseDataSet
                 if distanceBefore < distanceAfter {
                     closest = index(before: closest)
                 }
-                distanceBefore < distanceAfter ? closest -= 1 : ()
                 closestXValue = self[closest].x
             }
         }
